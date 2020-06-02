@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
-<head>
+<head th:fragment="head">
     <meta charset="UTF-8"/>
-    <title></title>
+    <title>Coding Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!--    <script th:src="@{/script.js}"></script>-->
+<!--    <link th:href="@{/styles.css}" rel="stylesheet">-->
+
 </head>
 <body>
 
 <nav th:fragment="navigation">
-    <ul>
-        <li><a href="/events">All Events</a></li>
-        <li><a href="/events/create">Create Event</a></li>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="/events">All Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/create">Create Event</a></li>
     </ul>
 </nav>
 
